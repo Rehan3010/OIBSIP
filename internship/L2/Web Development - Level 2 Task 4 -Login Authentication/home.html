@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #333;
+            padding: 15px 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px 50px;
+        }
+
+        nav h1 {
+            color: #fff;
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        .welcome-message {
+            background-color: #fff;
+            text-align: center;
+            height: 480px;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .welcome-message h1 {
+            color: #333;
+        }
+
+        #logoutButton {
+            font-size: 18px;
+            background-color: #e74c3c;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #logoutButton:hover {
+            background-color: #c0392b;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>Dashboard</h1>
+            <button id="logoutButton">Logout</button>
+        </nav>
+    </header>
+
+    <div class="welcome-message">
+        <h1></h1>
+    </div>
+
+    <script>
+        //Logout function
+        document.addEventListener('DOMContentLoaded', function () {
+            const logoutButton = document.getElementById('logoutButton');
+            const welcomeMessage = document.querySelector('.welcome-message h1');
+
+            // Get the logged-in user from local storage
+            const loggedInUser = localStorage.getItem('loggedInUser');
+
+            if (!loggedInUser) {
+                // User is not logged in, redirect to login page
+                alert('You are not logged in. Redirecting to login page...');
+                window.location.href = 'login.html';
+            }
+
+            if (welcomeMessage && loggedInUser) {
+                welcomeMessage.innerText = `Welcome Back, ${loggedInUser}!`;
+            }
+
+            if (logoutButton) {
+                logoutButton.addEventListener('click', function () {
+                    // Clear user data and redirect to the login page
+                    localStorage.removeItem('loggedInUser');
+                    alert('Logout successful! Redirecting to login page...');
+                    window.location.href = 'login.html';
+                });
+            }
+        });
+
+    </script>
+
+</body>
+
+</html>

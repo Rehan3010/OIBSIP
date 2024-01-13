@@ -1,0 +1,336 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    text-align: center;
+
+}
+
+body {
+
+    background-color: #515664;
+    color: #fff;
+}
+
+.head {
+    background-color: #080808;
+
+
+}
+
+.container {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: -0.5;
+}
+
+
+.navbar {
+    background-color: rgb(53, 48, 48);
+    height: 150px;
+    display: flex;
+    /* on left side home about services porfolio contact us */
+    /* justify-content:space-between; */
+    justify-content: space-around;
+    align-items: center;
+
+    position: fixed;
+    position: sticky;
+
+}
+
+.navbar ul {
+    list-style: none;
+
+    margin-left: 100vh;
+    position: fixed;
+    position: sticky;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    position: relative;
+    color: #fff;
+}
+
+.navbar ul li {
+    /* homeaboutservicesporfoliocontactus both */
+    /* float: left; */
+    display: inline-block;
+    margin: 10px 10px;
+    font-size: larger;
+}
+
+ul li:hover {
+    background-color: #ff004f;
+    transform: scale(1.10);
+
+}
+
+.loo {
+    background-image: url("divya.jpg");
+    height: 100px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+.loo:hover {
+
+    transform: scale(1.10);
+
+}
+
+
+.text {
+    background-color: blue;
+    color: #fff;
+
+}
+
+
+
+.left {
+    text-align: center;
+    margin-top: 250px;
+    margin-left: 80px;
+    font-size: x-large;
+
+}
+
+.left h2 span {
+    color: gold;
+    color: #ff004f;
+}
+
+#after-head {
+    height: 800px;
+    position: relative;
+    /* text the image in one row; */
+    display: flex;
+    /* right: side of pae */
+    justify-content: space-between;
+    margin-top: 40px;
+
+    background-color: rgb(53, 48, 48);
+
+
+}
+
+#after-head img {
+    float: right;
+    height: 700px;
+    width: 800px;
+    margin: 60px 60px;
+
+}
+
+.about-left img {
+    /* float: right; */
+    height: 600px;
+    width: 500px;
+    margin: 60px;
+}
+
+#after-head .right img:hover {
+    transform: scale(1.10);
+
+}
+
+.about-right {
+    float: right;
+    height: 400px;
+    width: 500px;
+
+    margin-top: 70px;
+    margin-right: 50px;
+
+
+
+}
+
+#about {
+
+    height: 700px;
+    background-color: rgb(53, 48, 48);
+    margin-top: 40px;
+    color: #fff;
+    text-align: center;
+}
+
+#center {
+    text-align: center;
+    margin-left: 50%;
+}
+
+
+.about-right p {
+    /* skillsexperienceeducation */
+    /* display: flex; */
+    margin: 20px;
+    font-size: larger;
+
+
+}
+
+.about-right h1:hover {
+    cursor: grab;
+
+    color: #ff004f
+}
+
+.about-left img:hover {
+    transform: scale(1.1);
+}
+
+.para1 {
+    margin-right: 230px;
+}
+
+.about-para h4 {
+    margin-top: 30px;
+}
+
+.see-info {
+    margin-left: 20px;
+
+}
+
+#services {
+    height: 600px;
+    margin-top: 40px;
+    background-color: rgb(53, 48, 48);
+}
+
+#portfolio {
+    height: 600px;
+
+}
+
+#contact {
+    height: 300px;
+    margin-top: 40px;
+
+    background-color: rgb(53, 48, 48);
+}
+
+.contact-info p {
+    text-align: center;
+    margin-top: 40px;
+    font-size: large;
+
+}
+
+#services {
+    margin-top: 40px;
+    background-color: rgb(53, 48, 48);
+
+}
+
+#services h1 {
+    margin-top: 30px;
+    margin-left: 700px;
+    margin-bottom: 40px;
+
+
+}
+
+#services h1:hover {
+    cursor: grab;
+
+    color: #ff004f
+}
+
+
+
+
+
+.services-info {
+
+    display: flex;
+    margin-top: 20px;
+    padding: 20px;
+    margin-left: 320px;
+}
+
+.services-info1 {
+
+    font-size: large;
+    text-align: center;
+    width: 900px;
+    margin-left: 320px;
+    ;
+}
+
+.services-info2 {
+    height: 400px;
+    width: 400px;
+    background-color: #ccded6;
+    font-size: large;
+    margin: 25px;
+    padding: 30px;
+    color: #080808;
+    border-radius: 20px;
+}
+
+.services-info3 {
+    height: 400px;
+    width: 400px;
+    background-color: #e2d0da;
+    font-size: large;
+    margin: 30px;
+    padding: 30px;
+    color: #080808;
+    border-radius: 20px;
+}
+
+.portfolio-info {
+    display: inline-block;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+
+.port-div1:hover {
+
+    transform: scale(1.2);
+
+
+}
+
+
+
+#portfolio {
+
+    background-color: rgb(53, 48, 48);
+    margin-top: 40px;
+    text-align: center;
+
+
+
+}
+
+.port-div1 {
+    height: 300px;
+    width: 900px;
+    background-color: #f3e0c5;
+    color: #080808;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.portfolio-info h1 {
+    margin-top: 40px;
+}
+
+.portfolio-info {
+    text-align: center;
+    font-size: larger;
+    margin-left: 100px;
+    margin-right: 100px;
+
+}

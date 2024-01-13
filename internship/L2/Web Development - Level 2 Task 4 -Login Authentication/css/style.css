@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.contact {
+    background: url('../images/bg.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.contact .reg {
+    width: 500px;
+}
+
+.contact .reg form {
+    padding: 0.1rem 2rem;
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: .5rem;
+    backdrop-filter: blur(.4rem);
+    width: 350px;
+}
+
+.contact .reg form h3 {
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    margin: 20px 0;
+}
+
+.contact .reg form h4 {
+    text-align: center;
+    font-size: 1.7rem;
+    color: white;
+    margin: 20px 0;
+}
+
+.contact .reg form .inputs {
+    width: 330px;
+    margin: 0.6rem 0;
+    border-radius: .5rem;
+    background-color: transparent;
+    padding: 0.7rem;
+    font-size: 1.2rem;
+    color: white;
+    text-transform: none;
+    outline: none;
+    border: 2px solid #C700C6;
+    ;
+}
+
+.contact .reg form .inputs::placeholder {
+    color: rgb(203, 203, 203);
+}
+
+label {
+    margin: 10px 0;
+    display: block;
+    color: white;
+}
+
+.gender-option {
+    margin-bottom: 5px;
+}
+
+.term {
+    margin: 1.1rem 0;
+}
+
+.btn {
+    width: 100%;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+.btn:hover {
+    background: #C700C6;
+    color: #000;
+}
+
+span {
+    color: white;
+}
+
+.gender-border {
+    border: 2px solid #C700C6;
+    border-radius: .5rem;
+    padding: 0.1rem 0.6rem;
+    margin-bottom: 0.8rem;
+    width: 385px;
+}
+
+
+.banner{
+    color: white;
+    font-size: 16px;
+    text-align: center;
+}
+
+.banner a {
+    font-size: 17px;
+    color: yellowgreen;
+    text-decoration: underline;
+}
+
+.error-message {
+    color: rgb(255, 230, 0);
+    font-size: 15px;
+    margin-top: 5px;
+}

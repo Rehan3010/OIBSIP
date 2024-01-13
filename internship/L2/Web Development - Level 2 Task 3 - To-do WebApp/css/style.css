@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body{
+    background: url(../images/bg.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container{
+    width: auto;
+    background-color: rgba(199, 199, 199, 0.221);
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+.todo-head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.todo-head h2{
+    color: white;
+    font-size: 35px;
+}
+
+
+
+/* TODO Body */
+.todo-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 40px;
+}
+
+.text-input{
+    width: 350px;
+    padding: 14px;
+    border: none;
+    outline: #DE13D2 solid 2px;
+    border-radius: 30px;
+    font-size: 18px;
+}
+
+
+.add-icon{
+    width: 57px;
+    cursor: pointer;
+    position: absolute;
+    right: 22px;
+}
+
+
+/* TODO List */
+ul li{
+    list-style: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: white;
+    padding: 10px;
+}
+
+li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #5A5568;
+    margin-top: 10px;
+    border-radius: 5px;
+    outline: #DE13D2 solid 1px;
+    width: 100%;
+}
